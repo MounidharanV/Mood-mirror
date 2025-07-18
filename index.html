@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Mirror</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mood Mirror</h1>
+    <div class="mood-buttons"></div>
+
+    <div class="display-area">
+      <h2 id="current-mood">Your Mood</h2>
+      <p id="quote">Select a mood to see a quote.</p>
+    </div>
+
+    <h3>Add Your Own Mood</h3>
+    <form id="addMoodForm">
+      <input type="text" id="newMood" placeholder="Mood Name" required />
+      <input type="color" id="newColor" value="#ffffff" title="Page Background" />
+      <input type="color" id="newQuoteBg" value="#eeeeee" title="Quote Background" />
+      <input type="text" id="newQuote" placeholder=" Quote" required />
+      <button type="submit">Add Mood</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
